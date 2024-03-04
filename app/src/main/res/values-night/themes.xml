@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style
+        name="Base.Theme.ProductcomparisonApp"
+        parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style
+        name="Theme.ProductcomparisonApp"
+        parent="Base.Theme.ProductcomparisonApp" />
+</resources>

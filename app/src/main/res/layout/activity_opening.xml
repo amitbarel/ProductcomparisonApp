@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OpeningActivity">
+
+    <ImageView
+        android:id="@+id/IMG_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="top|start"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_image1"
+        tools:ignore="ContentDescription" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_gravity="bottom|start"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="24dp"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TXT_app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="33sp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                android:text="@string/find_what"
+                />
+
+            <TextView
+                android:id="@+id/TXT_app_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                android:alpha="0.4"
+                android:text="@string/explanation_paragraph"
+                />
+            
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/rectangle_bg_light_blue_a700_radius_2"
+                tools:ignore="ContentDescription"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/BTN_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Next"
+                style="@style/btnSolidRounded"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    
+    
+
+
+
+</FrameLayout>
