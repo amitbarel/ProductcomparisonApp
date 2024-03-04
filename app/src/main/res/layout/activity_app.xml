@@ -18,7 +18,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="87dp"/>
+            android:layout_height="67dp"/>
 
         <TextView
             android:textSize="39sp"
@@ -40,21 +40,8 @@
 
             <Spinner
                 android:id="@+id/prod_spinner"
-                android:layout_width="150dp"
+                android:layout_width="230dp"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/btn_dropdown"
-                android:spinnerMode="dropdown"
-                tools:ignore="MissingConstraints" />
-
-            <View
-                android:layout_width="45dp"
-                android:layout_height="match_parent"/>
-
-            <Spinner
-                android:id="@+id/alt_prod_spinner"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:clickable="false"
                 android:background="@android:drawable/btn_dropdown"
                 android:spinnerMode="dropdown"
                 tools:ignore="MissingConstraints" />

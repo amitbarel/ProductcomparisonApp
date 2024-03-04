@@ -73,4 +73,16 @@ public class Item {
         this.alternative = alternative;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
+                ", cost=" + cost +
+                ", weight=" + weight +
+                ", alternative=" + alternative +
+                '}';
+    }
 }
