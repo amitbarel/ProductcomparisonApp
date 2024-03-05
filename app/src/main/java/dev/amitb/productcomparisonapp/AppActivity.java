@@ -5,7 +5,10 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import productComparison.Item;
@@ -15,20 +18,23 @@ import productComparison.ItemController;
 public class AppActivity extends AppCompatActivity {
 
     private AppCompatButton BTN_apb;
+    private Spinner prod_spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app);
 
-        BTN_apb = findViewById(R.id.BTN_calculate);
-        BTN_apb.setOnClickListener(v ->{
+
+
+        prod_spinner.setOnClickListener(v -> {
             new ItemController(new ItemCallBack() {
                 @Override
                 public void success(List<Item> items) {
-                    for (Item item:items
+
+                    for (Item item : items
                     ) {
-                        Log.d("items", "Data: " + item.toString());
+                                Log.d("items", "Data: " + item.toString());
                     }
                 }
 

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/RV_betterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/RV_betterBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Brand"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/RV_betteramount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/RV_betterPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="4.99$"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="17sp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+</RelativeLayout>
