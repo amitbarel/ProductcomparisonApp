@@ -58,23 +58,29 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card1"
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardBackgroundColor="@color/material_on_surface_stroke"
-                tools:ignore="MissingConstraints" />
+                tools:listitem="@layout/product_view">
 
+            </androidx.recyclerview.widget.RecyclerView>
             <View
                 android:layout_width="45dp"
                 android:layout_height="match_parent"/>
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card2"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product2"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardBackgroundColor="@color/material_on_surface_stroke"
-                tools:ignore="MissingConstraints" />
+                tools:listitem="@layout/product_view">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
 
         </LinearLayout>
 
@@ -90,15 +96,18 @@
             android:backgroundTint="@color/white"
             android:textColor="@color/black"/>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/CARD_final_decision"
-            android:layout_gravity="center"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/betterProduct"
             android:layout_width="340dp"
             android:layout_height="120dp"
-            app:cardBackgroundColor="@color/material_on_surface_stroke"
             android:layout_marginTop="15dp"
             app:cardCornerRadius="15dp"
-            tools:ignore="MissingConstraints" />
+            app:cardBackgroundColor="@color/material_on_surface_stroke"
+            tools:listitem="@layout/better_product_view">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
 
     </LinearLayout>
 
