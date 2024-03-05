@@ -4,8 +4,4 @@
         name="Base.Theme.ProductcomparisonApp"
         parent="Theme.Material3.DayNight.NoActionBar">
     </style>
-
-    <style
-        name="Theme.ProductcomparisonApp"
-        parent="Base.Theme.ProductcomparisonApp" />
 </resources>

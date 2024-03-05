@@ -11,15 +11,16 @@
     <ImageView
         android:id="@+id/IMG_main_bg"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="top|start"
+        android:layout_marginBottom="150dp"
         android:scaleType="fitXY"
         android:src="@drawable/img_image1"
         tools:ignore="ContentDescription" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
         android:backgroundTint="@color/white"
         app:cardCornerRadius="24dp"

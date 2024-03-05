@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ProductcomparisonApp</string>
+    <string name="app_name">Product Comparison App</string>
     <string name="find_what">Find out what product is worth it!</string>
     <string name="explanation_paragraph">Compare two different products, and we will try to help you choose which product is more profitable for you</string>
     <string name="real_info">Compare between two products by price for gram!</string>
+    <string name="show_better_product">Show better product</string>
 </resources>

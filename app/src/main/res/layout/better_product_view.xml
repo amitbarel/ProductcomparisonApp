@@ -7,55 +7,56 @@
 
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/RV_betterName"
+        android:id="@+id/title_better"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
-        android:text="Name"
-        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:text="The better product is:"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold">
+        android:textStyle="bold"/>
 
-    </com.google.android.material.textview.MaterialTextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/RV_betterBrand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:text="Brand"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        android:textStyle="bold">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RV_betterBrand"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Product"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
 
-    </com.google.android.material.textview.MaterialTextView>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RV_betteramount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Brand"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
 
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RV_betterPrice"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="price for gram"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/RV_betteramount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerInParent="true"
-        android:text="100"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="17sp">
-
-    </com.google.android.material.textview.MaterialTextView>
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/RV_betterPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="4.99$"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="17sp">
-
-    </com.google.android.material.textview.MaterialTextView>
+    </LinearLayout>
 
 </RelativeLayout>

@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_blue"
     tools:context=".AppActivity">
 
     <LinearLayout
@@ -38,13 +38,13 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <Spinner
+            <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/prod_spinner"
                 android:layout_width="230dp"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/btn_dropdown"
-                android:spinnerMode="dropdown"
-                tools:ignore="MissingConstraints" />
+                android:layout_height="50dp"
+                tools:listitem="@layout/item_name"
+                android:backgroundTint="@color/white"
+                android:popupBackground="@color/dropdown_color"/>
 
         </LinearLayout>
 
@@ -90,7 +90,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="15dp"
             android:padding="10dp"
-            android:text="Show better product"
+            android:text="@string/show_better_product"
             android:layout_gravity="center"
             style="@style/btnSolidRounded"
             android:backgroundTint="@color/white"

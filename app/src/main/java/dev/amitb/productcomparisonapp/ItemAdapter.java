@@ -10,12 +10,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ProductAdapter extends BaseAdapter {
+public class ItemAdapter extends BaseAdapter {
 
 
     private Context context;
     private ArrayList<String> names;
-    public ProductAdapter(Context context, ArrayList<String> names) {
+    public ItemAdapter(Context context, ArrayList<String> names) {
         this.context = context;
         this.names = names;
     }
