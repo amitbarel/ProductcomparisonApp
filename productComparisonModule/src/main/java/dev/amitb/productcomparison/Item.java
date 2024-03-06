@@ -1,4 +1,4 @@
-package productComparison;
+package dev.amitb.productcomparison;
 
 public class Item {
     private int id;

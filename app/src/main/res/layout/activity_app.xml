@@ -55,32 +55,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:orientation="horizontal">
 
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/product"
-                android:layout_width="150dp"
+                android:id="@+id/alternatives"
+                android:layout_width="match_parent"
                 android:layout_height="175dp"
+                android:orientation="horizontal"
                 app:cardBackgroundColor="@color/material_on_surface_stroke"
-                tools:listitem="@layout/product_view">
-
-            </androidx.recyclerview.widget.RecyclerView>
-            <View
-                android:layout_width="45dp"
-                android:layout_height="match_parent"/>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/product2"
-                android:layout_width="150dp"
-                android:layout_height="175dp"
-                app:cardBackgroundColor="@color/material_on_surface_stroke"
-                tools:listitem="@layout/product_view">
-
-            </androidx.recyclerview.widget.RecyclerView>
-
-
+                tools:listitem="@layout/recycle_view_items"/>
 
         </LinearLayout>
 
@@ -96,18 +80,72 @@
             android:backgroundTint="@color/white"
             android:textColor="@color/black"/>
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/betterProduct"
             android:layout_width="340dp"
             android:layout_height="120dp"
             android:layout_marginTop="15dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="@color/material_on_surface_stroke"
-            tools:listitem="@layout/better_product_view">
+            app:cardBackgroundColor="@color/material_on_surface_stroke">
 
-        </androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title_better"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:layout_margin="10dp"
+                    android:text="The better brand is:"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/betterBrand"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Brand"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/betterPrice"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="price for gram"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
 
+
+
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 

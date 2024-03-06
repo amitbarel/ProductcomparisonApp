@@ -1,19 +1,16 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
 }
 
 android {
-    namespace = "dev.amitb.productcomparisonapp"
+    namespace = "dev.amitb.productcomparison"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "dev.amitb.productcomparisonapp"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -43,7 +40,4 @@ dependencies {
     // Rest API calls
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation(project(":productComparisonModule"))
-
-    //SDK
 }

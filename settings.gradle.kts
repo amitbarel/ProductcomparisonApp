@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ProductcomparisonApp"
 include(":app")
+include(":productComparisonModule")

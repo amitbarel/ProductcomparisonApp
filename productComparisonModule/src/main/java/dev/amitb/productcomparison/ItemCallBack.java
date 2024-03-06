@@ -1,4 +1,4 @@
-package productComparison;
+package dev.amitb.productcomparison;
 
 import java.util.List;
 
