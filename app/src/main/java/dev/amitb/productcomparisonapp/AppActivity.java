@@ -112,7 +112,6 @@ public class AppActivity extends AppCompatActivity implements AdapterView.OnItem
 
     private void setAdapters(List<Item> items) {
         ItemAdapter itemAdapter = new ItemAdapter(items, this);
-        alternatives.addItemDecoration(new SpacesItemDecoration(15));
         alternatives.setLayoutManager(new GridLayoutManager(AppActivity.this, items.size()));
         alternatives.setAdapter(itemAdapter);
     }
@@ -120,24 +119,5 @@ public class AppActivity extends AppCompatActivity implements AdapterView.OnItem
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
-    }
-
-    public static class SpacesItemDecoration extends RecyclerView.ItemDecoration {
-        private final int space;
-
-        public SpacesItemDecoration(int space) {
-            this.space = space;
-        }
-        @Override
-        public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-            outRect.left = space;
-            outRect.right = space;
-            outRect.bottom = space;
-            if (parent.getChildLayoutPosition(view) == 0) {
-                outRect.top = space;
-            } else {
-                outRect.top = 0;
-            }
-        }
     }
 }
